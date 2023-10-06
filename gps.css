@@ -66,7 +66,6 @@ header .logo{
     font-weight: bold;
     color: blueviolet;
     font-size: 1.6em;
-    border-radius: 50%; /* Establece este valor para lograr un efecto completamente redondeado */
 }
 
 header .container{
