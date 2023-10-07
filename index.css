@@ -379,9 +379,6 @@ body {
         display: none; /* Oculta el menú de navegación en pantallas pequeñas */
     }
 
-    main {
-        padding: 10px;
-    }
 }
 
 
