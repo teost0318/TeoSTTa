@@ -35,7 +35,7 @@ button{
 }
 
 .div {
-    width: 60px; /* Cambia el tamaño de la imagen ajustando el valor de width */
+    width: auto; /* Cambia el tamaño de la imagen ajustando el valor de width */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
     position: relative; /* Se establece la posición relativa para permitir cambios de posición */
     left: -390px; /* Cambia la posición horizontal ajustando el valor de left */
@@ -60,6 +60,13 @@ header{
     
 }
 
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
 
 header .container{
     display: flex;
