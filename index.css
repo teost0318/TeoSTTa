@@ -378,5 +378,11 @@ footer .container{
     }
 }
 
+/* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 767px) {
+    /* Agrega tus estilos específicos para dispositivos móviles aquí */
+}
+
+
 
   
