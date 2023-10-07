@@ -362,12 +362,6 @@ footer .container{
 
  /*Moviles
 /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
 
 /* Estilos para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 767px) {
@@ -379,6 +373,9 @@ body {
         display: none; /* Oculta el menú de navegación en pantallas pequeñas */
     }
 
+    main {
+        padding: 10px;
+    }
 }
 
 
