@@ -35,12 +35,15 @@ button{
 }
 
 .div {
-    width: 60px; /* Cambia el tamaño de la imagen ajustando el valor de width */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
-    position: relative; /* Se establece la posición relativa para permitir cambios de posición */
-    left: -410px; /* Cambia la posición horizontal ajustando el valor de left */
-    top: 0px; /* Cambia la posición vertical ajustando el valor de top */
-  }
+    width: 85px; /* El div ocupará el 100% del ancho del contenedor padre */
+    max-width: 100px; /* Establece un ancho máximo para el div */
+    margin-left: -470%;
+    padding: 10px;
+    top: 0px;
+    border-radius: 50%;
+    float: left; 
+    text-align: left;
+}
   
 
 button:hover{
