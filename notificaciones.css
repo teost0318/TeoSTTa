@@ -34,15 +34,22 @@ button{
     background-color: blueviolet;
 }
 
-.div {
-    width: auto; /* Cambia el tamaño de la imagen ajustando el valor de width */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
-    position: relative; /* Se establece la posición relativa para permitir cambios de posición */
-    left: -390px; /* Cambia la posición horizontal ajustando el valor de left */
-    top: 0px; /* Cambia la posición vertical ajustando el valor de top */
-    border-radius: 50%; /* Establece este valor para lograr un efecto completamente redondeado */
-  }
   
+  .div {
+    width: 100%;
+    max-width: 400px; /* Establece el ancho máximo del div */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 50%; /* Establece este valor para lograr un efecto completamente redondeado */
+}
+
+/* Media query para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+    .mi-div {
+        max-width: 100%; /* Utiliza el ancho completo en dispositivos pequeños */
+    }
+}
 
 button:hover{
     background-color: rgb(101, 33, 165);
