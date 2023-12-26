@@ -9,6 +9,40 @@
     list-style: none;
 }
 
+/* Estilos para el video de fondo */
+/* Estilos para el video de fondo */
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
 body {
     background: linear-gradient(
         150deg,
@@ -47,21 +81,21 @@ img {
     text-transform: uppercase;
 }
 
-.navbar ul {
+.content ul {
     display: flex;
     align-items: center;
 }
 
-.navbar ul li {
+.content ul li {
     padding: 0 20px;
     font-size: 20px;
 }
 
-.navbar ul li a {
+.content ul li a {
     color: #ffffff;
 }
 
-.navbar ul li a:hover {
+.content ul li a:hover {
     color: #ff0000;
 }
 
@@ -80,12 +114,21 @@ img {
 
 .header-content {
     display: flex;
-    margin-top: 150px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#content{
+    text-align: center;
+    font-size: 1.9em;
+    color: white;
+    font-style: oblique;
+    background: transparent;
 }
 
 .header-txt {
-    flex-basis: 50%;
-    padding-right: 120px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .header-txt h1 {
@@ -94,6 +137,7 @@ img {
     line-height: 1;
     color: #ffffff;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .header-txt p {
@@ -103,17 +147,24 @@ img {
 }
 
 .btn {
+    border: .25em;
+    text-align: center;
     display: inline-block;
     padding: 13px 30px;
-    background: linear-gradient(
-        90deg,
-        rgb(219, 56, 56) 0%,
-        rgb(253, 0, 0) 100%
-    );
     color: #ffffff;
     font-size: 18px;
+    border-bottom: 15px;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ff0000;
+    outline: none;
+    transition: 1s ease-in-out;
+
+}
+
+.btn:hover {
+    background-color: #000000;
 }
 
 .header-img {
@@ -131,7 +182,7 @@ img {
         display: initial;
     }
 
-    .menu .navbar {
+    .menu .content {
         position: absolute;
         top: 100%;
         left: 0;
@@ -140,21 +191,21 @@ img {
         display: none;
     }
 
-    .menu .navbar ul {
+    .menu .content ul {
         flex-direction: column;
         padding: 0 20px;
     }
 
-    .menu .navbar ul li {
+    .menu .content ul li {
         width: 100%;
         padding: 20px 0;
     }
 
-    .menu .navbar ul li a:hover {
+    .menu .content ul li a:hover {
         color: #1F0C42;
     }
 
-    #menu:checked ~ .navbar {
+    #menu:checked ~ .content {
         display: initial;
     }
 
@@ -174,3 +225,4 @@ img {
     }
     
 }
+
